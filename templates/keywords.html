@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Enter your keywords</h2>
+{% print(number) %}
+
+<form action = "/submitted" method = "post">
+{% for i in range(number) %}
+  <label for="fname">Enter your keyword:</label><br>
+  <input type="text" name="kw"><br>
+{% endfor %}
+  <input type = "submit" value="Submit">
+</form> 
+
+
+</body>
+</html>
